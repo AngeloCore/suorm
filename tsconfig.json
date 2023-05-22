@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "outDir": "lib",
+    "declarationDir": "types",
+    "removeComments": true,
+    "module": "commonjs",
+    "target": "ES2020",
+    "moduleResolution": "node",
+    "strict": true,
+    "pretty": true,
+    "declaration": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "newLine": "lf",
+    "noUnusedParameters": true,
+    "noUnusedLocals": true,
+    "noImplicitAny": true,
+    "noFallthroughCasesInSwitch": true
+  },
+  "include": ["./src"],
+  "exclude": ["./node_modules"]
+}
