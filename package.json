@@ -10,6 +10,7 @@
     "format": "prettier --write src/**",
     "build": "tsc",
     "build:check": "tsc --noEmit",
+    "prepublishOnly": "yarn build",
     "test:dev": "vitest",
     "test:ui": "vitest --ui",
     "test:run": "vitest run"
