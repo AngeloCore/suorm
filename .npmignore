@@ -4,4 +4,4 @@ test
 yarn.lock
 .prettierrc
 vite.config.ts
-tsconfig.ts
+tsconfig.json
