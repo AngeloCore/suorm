@@ -2,3 +2,6 @@ src
 test
 .gitignore
 yarn.lock
+.prettierrc
+vite.config.ts
+tsconfig.ts
