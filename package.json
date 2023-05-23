@@ -1,6 +1,6 @@
 {
   "name": "suorm",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A super simple query builder for surreal.db",
   "main": "lib/index.js",
   "author": "Angelo II",
@@ -22,5 +22,13 @@
     "typescript": "^5.0.4",
     "vite": "^4.3.8",
     "vitest": "^0.31.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AngeloCore/suorm.git"
+  },
+  "bugs": {
+    "url": "hhttps://github.com/AngeloCore/suorm/issues"
+  },
+  "homepage": "https://github.com/AngeloCore/suorm#readme"
 }
