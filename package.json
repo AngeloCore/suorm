@@ -1,8 +1,9 @@
 {
   "name": "suorm",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A super simple query builder for surreal.db",
   "main": "lib/index.js",
+  "types": "types/index.d.ts",
   "author": "Angelo II",
   "license": "MIT",
   "scripts": {
