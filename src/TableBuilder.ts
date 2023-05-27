@@ -8,17 +8,17 @@ export default class TableBuilder {
   private _fields: string[] = [];
   private _index: string[] = [];
 
-  name(name: TableBuilder['_tableName']) {
+  name(name: string) {
     this._tableName = name;
     return this;
   }
 
-  schemafull(opt: boolean = true) {
+  schemafull(opt = true) {
     this._schemafull = opt;
     return this;
   }
 
-  drop(opt: boolean = true) {
+  drop(opt = true) {
     this._drop = opt;
     return this;
   }
