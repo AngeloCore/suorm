@@ -21,7 +21,7 @@ export default class SelectBuilder {
     return this;
   }
 
-  where(con:string) {
+  where(con: string) {
     this._where = con;
     return this;
   }

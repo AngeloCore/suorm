@@ -24,11 +24,7 @@ export default class FieldBuilder {
     return this;
   }
 
-  value(
-    val: "$value" | Value,
-    or?: Value,
-    ignoreDefaultValues = false
-  ) {
+  value(val: "$value" | Value, or?: Value, ignoreDefaultValues = false) {
     this._value = val;
     if (or) this._valueOr = or;
     if (ignoreDefaultValues) this._ignoreDefaultValues = true;
