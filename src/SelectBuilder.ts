@@ -16,42 +16,42 @@ export default class SelectBuilder {
     this._projection = projection;
   }
 
-  from(target: typeof this._target) {
+  from(target: SelectBuilder['_target']) {
     this._target = target;
     return this;
   }
 
-  where(con: typeof this._where) {
+  where(con:SelectBuilder['_where']) {
     this._where = con;
     return this;
   }
 
-  as(con: typeof this._as) {
+  as(con: SelectBuilder['_as']) {
     this._as = con;
     return this;
   }
 
-  split(...field: typeof this._split) {
+  split(...field: SelectBuilder['_split']) {
     this._split = field;
     return this;
   }
 
-  group(...field: typeof this._group) {
+  group(...field: SelectBuilder['_group']) {
     this._group = field;
     return this;
   }
 
-  limit(lim: typeof this._limit) {
+  limit(lim: SelectBuilder['_limit']) {
     this._limit = lim;
     return this;
   }
 
-  start(sta: typeof this._start) {
+  start(sta: SelectBuilder['_start']) {
     this._start = sta;
     return this;
   }
 
-  timeout(time: typeof this._timeout) {
+  timeout(time: SelectBuilder['_timeout']) {
     this._timeout = time;
     return this;
   }

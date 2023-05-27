@@ -4,12 +4,12 @@ export default class IndexBuilder {
   private _unique: boolean = false;
   private _columns: string[] = [];
 
-  name(name: typeof this._indexName) {
+  name(name: IndexBuilder['_indexName']) {
     this._indexName = name;
     return this;
   }
 
-  tableName(name: typeof this._tableName) {
+  tableName(name: IndexBuilder['_tableName']) {
     this._tableName = name;
     return this;
   }
@@ -19,7 +19,7 @@ export default class IndexBuilder {
     return this;
   }
 
-  columns(...cols: typeof this._columns) {
+  columns(...cols: IndexBuilder['_columns']) {
     this._columns = cols;
     return this;
   }

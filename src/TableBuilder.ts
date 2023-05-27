@@ -8,7 +8,7 @@ export default class TableBuilder {
   private _fields: string[] = [];
   private _index: string[] = [];
 
-  name(name: string) {
+  name(name: TableBuilder['_tableName']) {
     this._tableName = name;
     return this;
   }

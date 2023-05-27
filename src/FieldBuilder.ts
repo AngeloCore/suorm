@@ -9,25 +9,25 @@ export default class FieldBuilder {
   private _ignoreDefaultValues = false;
   private _assertion: string = "";
 
-  name(name: typeof this._fieldName) {
+  name(name: FieldBuilder["_fieldName"]) {
     this._fieldName = name;
     return this;
   }
 
-  tableName(name: typeof this._tableName) {
+  tableName(name: FieldBuilder["_tableName"]) {
     this._tableName = name;
     return this;
   }
 
-  type(type: typeof this._type) {
+  type(type: FieldBuilder['_type']) {
     this._type = type;
     return this;
   }
 
   value(
-    val: typeof this._value,
-    or?: typeof this._valueOr,
-    ignoreDefaultValues: typeof this._ignoreDefaultValues = false
+    val: FieldBuilder['_value'],
+    or?: FieldBuilder['_valueOr'],
+    ignoreDefaultValues: FieldBuilder['_ignoreDefaultValues'] = false
   ) {
     this._value = val;
     if (or) this._valueOr = or;
@@ -69,7 +69,7 @@ export default class FieldBuilder {
     return value;
   }
 
-  assert(exp: typeof this._assertion) {
+  assert(exp: FieldBuilder['_assertion']) {
     this._assertion = exp;
     return this;
   }
