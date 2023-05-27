@@ -1,6 +1,6 @@
 {
   "name": "suorm",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A super simple query builder for surreal.db",
   "main": "lib/index.js",
   "types": "types/index.d.ts",
